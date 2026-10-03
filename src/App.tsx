@@ -142,42 +142,6 @@ function DataWave() {
 /* PROJECT VISUALS                                                             */
 /* -------------------------------------------------------------------------- */
 
-function VideoPipeline() {
-  const stages = [
-    ["01", "Input", "Video"],
-    ["02", "Detect", "YOLO"],
-    ["03", "Track", "BoT-SORT"],
-    ["04", "Smooth", "Tracks"],
-    ["05", "Anonymize", "Blur"],
-    ["06", "Output", "Video"],
-  ];
-
-  return (
-    <div className="pipeline-visual">
-      <div className="pipeline-track">
-        {stages.map(([n, title, sub], index) => (
-          <div className="pipeline-piece" key={title}>
-            <div className="pipeline-node">
-              <small>{n}</small>
-              <strong>{title}</strong>
-              <span>{sub}</span>
-            </div>
-
-            {index < stages.length - 1 && (
-              <div className="pipeline-arrow">→</div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      <div className="pipeline-status">
-        <span />
-        Privacy-preserving video processing
-      </div>
-    </div>
-  );
-}
-
 function RagVisual() {
   return (
     <div className="rag-visual">
