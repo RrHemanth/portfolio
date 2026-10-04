@@ -130,10 +130,7 @@ function DataWave() {
       <div className="signal s3">
         <i /> SYSTEMS
       </div>
-
-      <div className="signal s4">
-        <i /> REAL-WORLD IMPACT
-      </div>
+      
     </div>
   );
 }
@@ -758,7 +755,7 @@ export default function App() {
                 <b>☎</b>
                 <span>
                   <small>Phone</small>
-                  +1 301 309 7595
+                  +1 301-309-7595
                 </span>
               </a>
 
